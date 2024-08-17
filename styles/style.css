@@ -1,6 +1,14 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 
+
+/* root styles */
+:root {
+    --fs-24: 24px;
+    --fw-600: 600;
+    --prime-color: #1d1d1d;
+}
+
 /* Global styles */
 * {
     margin: 0;
@@ -10,4 +18,24 @@
 /* "Readex Pro" font for entire body */
 body {
     font-family: "Readex Pro", sans-serif;
+}
+
+/* Container Styles */
+
+/* Main style starts here */
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+/* logo text */
+.logo-area > h4 {
+    color: var(--prime-color);
+    font-size: var(--fs-24);
+    font-weight: var(--fw-600);
+}
+
+/* logo image */
+.logo-area > img {
+    width: 47px;
+    height: 47px;
 }
