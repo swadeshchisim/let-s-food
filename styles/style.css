@@ -13,6 +13,11 @@
     --text-light: rgba(29, 29, 29, 0.7);
 }
 
+/* container styles */
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
 /* custom btn */
 .custom-btn {
     color: var(--primary-black);
@@ -36,9 +41,18 @@ body {
     font-family: "Readex Pro", sans-serif;
 }
 
-/* Container Styles */
 
 /* Main style starts here */
+
+/* Nav area styles */
+.nav-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+/* logo styles */
 .logo-area {
     display: flex;
     align-items: center;
@@ -94,4 +108,7 @@ ul > .list-item {
 .btn-spacing {
     display: flex;
     column-gap: 16px;
+}
+.btn-spacing,.client-icon:hover {
+    cursor: pointer;
 }
