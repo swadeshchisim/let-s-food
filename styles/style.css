@@ -30,6 +30,11 @@
     border-radius: 50px;
 }
 
+/* custom color */
+.custom-color {
+    color: var(--primary-golden);
+}
+
 /* Global styles */
 * {
     margin: 0;
