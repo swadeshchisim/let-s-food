@@ -13,6 +13,18 @@
     --text-light: rgba(29, 29, 29, 0.7);
 }
 
+/* custom btn */
+.custom-btn {
+    color: var(--primary-black);
+    font-size: 14px;
+    font-weight: var(--fw-600);
+    text-decoration: none;
+    background: var(--primary-golden);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+}
+
 /* Global styles */
 * {
     margin: 0;
@@ -62,4 +74,24 @@ ul > .list-item {
     color: var(--primary-black);
     border-bottom: 4px solid var(--primary-golden);
     border-radius: 4px;
+}
+
+/* client area styles */
+.client-area {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+.client-icon {
+    color: var(--primary-black);
+    font-size: var(--fs-24);
+}
+
+/* signin area */
+.signin-icon {
+    font-size: 18px;
+}
+.btn-spacing {
+    display: flex;
+    column-gap: 16px;
 }
