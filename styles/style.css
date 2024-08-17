@@ -8,6 +8,7 @@
     --fs-24: 24px;
     --fw-500: 500;
     --fw-600: 600;
+    --fw-700: 700;
     --primary-golden: #FFCB45;
     --primary-black: #1d1d1d;
     --text-light: rgba(29, 29, 29, 0.7);
@@ -22,7 +23,7 @@
 .custom-btn {
     color: var(--primary-black);
     font-size: 14px;
-    font-weight: var(--fw-600);
+    font-weight: var(--fw-700);
     text-decoration: none;
     background: var(--primary-golden);
     border: none;
@@ -116,4 +117,23 @@ ul > .list-item {
 }
 .btn-spacing,.client-icon:hover {
     cursor: pointer;
+}
+
+/* banner section styles */
+#banner-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.banner-title {
+    max-width: 480px;
+    font-size: 48px;
+    font-weight: var(--fw-600);
+}
+.banner-description {
+    max-width: 440px;
+    color: var(--text-light);
+    font-size: 18px;
+    padding: 22px 0;
 }
