@@ -6,12 +6,14 @@
 :root {
     --fs-22: 22px;
     --fs-24: 24px;
+    --fs-32: 32px;
     --fw-500: 500;
     --fw-600: 600;
     --fw-700: 700;
     --primary-golden: #FFCB45;
     --primary-black: #1d1d1d;
     --text-light: rgba(29, 29, 29, 0.7);
+    --text-center: center;
 }
 
 /* container styles */
@@ -34,6 +36,13 @@
 /* custom color */
 .custom-color {
     color: var(--primary-golden);
+}
+
+/* section styles */
+.section-title {
+    color: var(--primary-black);
+    font-size: var(--fs-32);
+    font-weight: var(--fw-700);
 }
 
 /* Global styles */
