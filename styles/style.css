@@ -249,6 +249,44 @@ ul > .list-item {
 }
 
 
+/* customer review section styles */
+#customer-review-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 100px 50px;
+}
+.review-section-title {
+    width: 480px;
+    padding: 0;
+}
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+}
+.first-row img {
+    width: 430px;
+    border-radius: 10px 10px 0px 0px;
+}
+.second-row img {
+    width: 208px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.customer-review {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 0;
+}
+.review-text {
+    width: 412px;
+    color: var(--text-light);
+    font-size: var(--fs-18);
+}
 
 
 /* media query styles for mobile */
