@@ -288,6 +288,21 @@ ul > .list-item {
     font-size: var(--fs-18);
 }
 
+/* newsletter section starts here */
+#newsletter-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/newsletter.png);
+    padding: 92px 0;
+}
+.newsletter-title {
+    width: 524px;
+    color: #fff;
+    font-size: var(--fs-32);
+    font-weight: var(--fw-700);
+    margin-bottom: 30px;
+}
 
 /* media query styles for mobile */
 @media only screen and (max-width: 600px) {
