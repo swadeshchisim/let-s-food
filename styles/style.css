@@ -299,7 +299,7 @@ ul > .list-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/newsletter.png);
+    background: url(../images/newsletter.png) no-repeat center center / cover;
     padding: 92px 0;
     border-radius: 10px;
 }
