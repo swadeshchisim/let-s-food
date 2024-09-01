@@ -21,7 +21,7 @@
 
 /* container styles */
 .container {
-    max-width: 1180px;
+    max-width: 1192px;
     margin: 0 auto;
 }
 /* custom btn */
@@ -126,8 +126,8 @@ ul > .list-item {
 .link-item {
     color: var(--text-light);
     text-decoration: none;
-    font-size: var(--fs-22);
-    padding: 10px 30px;
+    font-size: var(--fs-18);
+    padding: 10px 18px;
 }
 .menu-bar ul li a.active,
 .menu-bar ul li a:active {
@@ -384,12 +384,20 @@ footer {
     padding: 45px 0;
 }
 
+/* media query for large device */
+@media only screen and (max-width: 1280px) {
+    .nav-area {
+        padding: 20px;
+    }
+}
 
 /* media query styles for small device*/
 @media only screen and (max-width: 900px) {
-
+    .none {
+        display: none;
+    }
     .nav-area {
-        padding: 20px;
+        padding: 30px;
     }
     .logo-area > h4  {
         font-size: var(--fs-20);
@@ -461,12 +469,13 @@ footer {
 
     /* our menu item */
     #menu-item-area {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         margin: 0 20px;
     }
     .menu-item {
-        width: 280px;
+        width: 320px;
+        padding: 52px 25px;
     }
 
     #customer-review-area {
