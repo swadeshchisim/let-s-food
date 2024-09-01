@@ -44,7 +44,7 @@
 /* section styles */
 .section-subtitle {
     color: var(--primary-golden);
-    font-size: var(--fs-22);
+    font-size: var(--fs-18);
     font-weight: var(--fw-500);
 }
 .section-title {
@@ -55,7 +55,7 @@
 }
 .section-description {
     color: var(--text-light);
-    font-size: var(--fs-22);
+    font-size: var(--fs-18);
     font-weight: var(--fw-500);
     padding-bottom: 32px;
 }
@@ -212,7 +212,7 @@ ul > .list-item {
 }
 .service-description {
     color: var(--text-light);
-    font-size: var(--fs-20);
+    font-size: var(--fs-18);
     font-weight: var(--fw-500);
 }
 
@@ -392,7 +392,7 @@ footer {
 }
 
 /* media query styles for small device*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
     .none {
         display: none;
     }
@@ -428,12 +428,12 @@ footer {
     .menu-bar {
         position: absolute;
         top: 80px;
-        left: 0;
-        right: 0;
-        width: 100%;
+        left: 50%;
+        width: 50%;
         height: 0;
         background: var(--primary-black);
         transition: 0.2s;
+        border-radius: 10px;
         overflow: hidden;
     }
     .menu-bar.active {
@@ -452,13 +452,17 @@ footer {
         margin-bottom: 6px;
         padding: 10px 0;
     }
+    .banner-content {
+        padding: 0 20px;
+    }
+    .banner-title {
+        font-size: 32px;
+    }
+    .banner-image-area img {
+        width: 100%;
+    }
     .client-area {
         display: none;
-    }
-
-    /* banner styles */
-    .banner-content {
-        flex-direction: column-reverse;
     }
 
     /* our service styles */
@@ -472,6 +476,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         margin: 0 20px;
+        overflow: hidden;
     }
     .menu-item {
         width: 320px;
@@ -486,6 +491,7 @@ footer {
     }
     .second-row img {
         width: 264px;
+        margin-top: 15px;
     }
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
@@ -493,10 +499,23 @@ footer {
         padding: 0 15px 20px;
     }
 }
+@media only screen and (max-width: 768px) {
+    .menu-bar {
+        width: 50%;
+        left: 50%;
+    }
+    #menu-item-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 /* media query styles for mobile */
 @media only screen and (max-width: 600px) {
     .nav-area {
         padding: 20px;
+    }
+    .menu-bar {
+        width: 100%;
+        left: 0;
     }
     .banner-content {
         flex-direction: column-reverse;
@@ -578,8 +597,5 @@ footer {
     }
     .copyright-text {
         padding: 20px 0;
-    }
-    #banner-area, main, footer {
-        display: none;
     }
 }
