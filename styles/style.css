@@ -383,12 +383,28 @@ footer {
     text-align: var(--text-center);
     padding: 45px 0;
 }
+
+
 /* media query styles for small device*/
 @media only screen and (max-width: 900px) {
-    /* .menu-bar {
+    .tomato {
+        background: tomato;
+    }
+    /* .none {
         display: none;
     } */
+    .nav-area {
+        margin: 0;
+    }
+    .logo-area > h4  {
+        font-size: var(--fs-20);
+    }
+    .logo-area > img {
+        width: 47px;
+        height: 47px;
+    }
     .hamburger {
+        display: none;
         cursor: pointer;
     }
     .hamburger .line {
@@ -436,8 +452,41 @@ footer {
     .client-area {
         display: none;
     }
-    .hamburger {
-        display: none;
+
+    /* banner styles */
+    .banner-content {
+        flex-direction: column-reverse;
+    }
+
+    /* our service styles */
+    .our-service-area {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    /* our menu item */
+    #menu-item-area {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin: 0 20px;
+    }
+    .menu-item {
+        width: 280px;
+    }
+
+    #customer-review-area {
+        flex-direction: column;
+    }
+    .first-row img{
+        width: 564px;
+    }
+    .second-row img {
+        width: 264px;
+    }
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 15px 20px;
     }
 }
 /* media query styles for mobile */
