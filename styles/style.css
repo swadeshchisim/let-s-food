@@ -297,6 +297,12 @@ ul > .list-item {
     padding: 92px 0;
     border-radius: 10px;
 }
+.newsletter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: var(--text-center);
+}
 .newsletter-title {
     width: 524px;
     color: #fff;
@@ -388,6 +394,23 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 20px;
     }
+
+    /* main section styles */
+    .collage-image-area, #newsletter-area {
+        margin: 0 15px;
+    }
+    .first-row, .second-row > img {
+        border-radius: 10px;
+    }
+    .first-row img {
+        width: 100%;
+    }
+    .second-row {
+        flex-direction: column;
+    }
+    .second-row img {
+        width: 100%;
+    }
     #customer-review-area {
         flex-direction: column;
         gap: 30px;  
@@ -403,6 +426,12 @@ footer {
     .section-subtitle {
         text-align: var(--text-center);
     }
+    .newsletter-title {
+        width: 90%;
+        font-size: var(--fs-28);
+        text-align: var(--text-center);
+    }
+    /* footer styles */
     footer {
         padding-top: 50px;
     }
@@ -423,7 +452,7 @@ footer {
     .copyright-text {
         padding: 20px 0;
     }
-    header, main {
+    header, footer {
         display: none;
     }
 }
