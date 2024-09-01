@@ -22,9 +22,14 @@
                     <img src="images/logo.png" alt="">
                 </div>
                 <!-- logo area ends here -->
-
+                 <!-- hamburger menu -->
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
                 <!-- primary menu area starts here -->
-                <div>
+                <div class="menu-bar">
                     <ul>
                         <li class="list-item">
                             <a class="link-item active" href="#">Home</a>
@@ -45,7 +50,7 @@
                 </div>
                 <!-- primary menu area ends here -->
                  <!-- client area starts here -->
-                  <div class="client-area">
+                <div class="client-area">
                     <i class="fa-solid fa-magnifying-glass client-icon"></i>
                     <i class="fa-solid fa-cart-shopping client-icon"></i>
                     <div clss="signin-area">
@@ -54,7 +59,7 @@
                             <span>Sign in</span>
                         </button>
                     </div>
-                  </div>
+                </div>
                  <!-- client area ends here -->
              </nav>
             <!-- nav area ends here -->
@@ -285,5 +290,13 @@
         </div>
      </footer>
      <!-- footer section ends here -->
+
+     <script>
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            const navBar = document.querySelector(".menu-bar");
+            navBar.classList.toggle("active");
+        }
+     </script>
 </body>
 </html>

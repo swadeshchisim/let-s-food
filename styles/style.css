@@ -118,7 +118,6 @@ header {
 /* Primary menu styles */
 ul {
     display: flex;
-    column-gap: 37px;
 }
 ul > .list-item {
     list-style: none;
@@ -128,11 +127,18 @@ ul > .list-item {
     color: var(--text-light);
     text-decoration: none;
     font-size: var(--fs-22);
+    padding: 10px 30px;
 }
-.active {
+.menu-bar ul li a.active,
+.menu-bar ul li a:active {
     color: var(--primary-black);
-    border-bottom: 4px solid var(--primary-golden);
     border-radius: 4px;
+    background: var(--primary-golden);
+}
+.menu-bar ul li a:hover {
+    color: var(--primary-black);
+    border-radius: 4px;
+    background: var(--primary-golden);
 }
 
 /* client area styles */
@@ -377,7 +383,63 @@ footer {
     text-align: var(--text-center);
     padding: 45px 0;
 }
-
+/* media query styles for small device*/
+@media only screen and (max-width: 900px) {
+    /* .menu-bar {
+        display: none;
+    } */
+    .hamburger {
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        margin: 6px 0;
+        background: var(--primary-black);
+        border-radius: 30px;
+    }
+    .menu-bar ul li a {
+        color: #fff;
+    }
+    .menu-bar ul li a.active, .menu-bar ul li a:active {
+        color: var(--primary-golden);
+        border: none;
+        background: #fff;
+    }
+    .menu-bar {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vh;
+        height: 0;
+        background: var(--primary-black);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .menu-bar.active {
+        height: 450px;
+    }
+    .menu-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0;
+        text-align: var(--text-center);
+        transition: 0.5s;
+        /* opacity: 0; */
+    }
+    .menu-bar ul  li a {
+        display: block;
+        margin-bottom: 6px;
+        padding: 10px 0;
+    }
+    .client-area {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+}
 /* media query styles for mobile */
 @media only screen and (max-width: 600px) {
     .banner-content {
@@ -461,7 +523,7 @@ footer {
     .copyright-text {
         padding: 20px 0;
     }
-    .nav-area, main, footer {
+    #banner-area, main, footer {
         display: none;
     }
 }
