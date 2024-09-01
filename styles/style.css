@@ -387,14 +387,9 @@ footer {
 
 /* media query styles for small device*/
 @media only screen and (max-width: 900px) {
-    .tomato {
-        background: tomato;
-    }
-    /* .none {
-        display: none;
-    } */
+
     .nav-area {
-        margin: 0;
+        padding: 20px;
     }
     .logo-area > h4  {
         font-size: var(--fs-20);
@@ -404,7 +399,7 @@ footer {
         height: 47px;
     }
     .hamburger {
-        display: none;
+        display: block;
         cursor: pointer;
     }
     .hamburger .line {
@@ -427,7 +422,7 @@ footer {
         top: 80px;
         left: 0;
         right: 0;
-        width: 100vh;
+        width: 100%;
         height: 0;
         background: var(--primary-black);
         transition: 0.2s;
@@ -491,6 +486,9 @@ footer {
 }
 /* media query styles for mobile */
 @media only screen and (max-width: 600px) {
+    .nav-area {
+        padding: 20px;
+    }
     .banner-content {
         flex-direction: column-reverse;
     }
